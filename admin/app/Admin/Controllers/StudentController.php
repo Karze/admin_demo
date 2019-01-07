@@ -117,6 +117,8 @@ class StudentController extends Controller
         $form = new Form(new Student);
 
         $form->text('name', 'Name');
+        $form->file('file_column', '单文件');
+        $form->multipleFile('file_column', '多文件');
 
         return $form;
     }
